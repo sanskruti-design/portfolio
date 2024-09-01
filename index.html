@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanskruti Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/images/logo.png" class="logo" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-rectangle-xmark" id="fas" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" id="fas" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hii, I am <span>Sanskruti</span><br>Shambharkar from <br>Nagpur.</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/images/sansuser.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I'm a passionate and dedicated full-stack developer with a strong foundation in both front-end
+                        and back-end technologies. Recently graduated in B.tech (information Technology) 2024 batch ,
+                        I've immersed myself in web development, learning
+                        the latest tools and frameworks to build dynamic, responsive, and user-friendly web
+                        applications. My journey into coding has been driven by a love for problem-solving and a
+                        curiosity for how things work under the hood.
+                        <br>
+                        <br>
+                        With proficiency in HTML, CSS, JavaScript,SQL,Wordpress and popular frameworks like React, I'm
+                        equipped to handle both the client-side and server-side of applications. I'm constantly learning
+                        and eager to take on new challenges that push the boundaries of what I can create.
+                        <br>
+                        <br>
+                        I thrive in collaborative environments and enjoy working on projects that require both
+                        creativity and technical expertise. As I step into the professional world, I'm excited to
+                        contribute my skills to innovative teams and grow as a developer.
+
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><Span>HTML</Span></li>
+                            <li><Span>CSS</Span></li>
+                            <li><Span>Bootstrap</Span></li>
+                            <li><Span>Javascript</Span></li>
+                            <li><Span>SQL</Span></li>
+                            <li><Span>Wordpress</Span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><Span>July 2024 - Current</Span><br>Full stack Developer Trainee at Excelr,Banglore.<br>
+                            </li>
+                            <li><Span>January 2024 - April 2024</Span><br>Internship at Codelancer cyber security and
+                                Forensics<br></li>
+                            <li><Span>August 2023 - September 2023</Span><br>Web Development Internship on InternPE<br>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><Span>2020 - 2024</Span><br>B.tech (Information Technology) from TGPCET, Nagpur.<br>
+                            </li>
+                            <li><Span>2020</Span><br>HSC from Dayanand Arya Kanya Jr.College, Nagpur.<br></li>
+                            <li><Span>2018</Span><br>SSC from Dayanand Arya Kanya Vidyalaya, Nagpur.<br></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front end Development</h2>
+                    <p>I provide front-end development services, specializing in responsive, user-friendly websites.
+                        With expertise in HTML, CSS, JavaScript, Bootstrap, and React, I craft visually appealing
+                        interfaces that work seamlessly across devices and browsers. My goal is to deliver
+                        high-performance, intuitive designs that enhance the overall user experience.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Back end Development</h2>
+                    <p>I offer back-end development services, focusing on scalable server-side
+                        applications. Familiar with SQL for managing the database. My goal is to deliver
+                        high-performance solutions that support seamless front-end functionality.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Full Stack Development</h2>
+                    <p>I provide full-stack development services, combining front-end and back-end expertise to build
+                        complete, dynamic web applications. With skills in HTML, CSS, Bootstrap, JavaScript, React, and
+                        database SQL, I create seamless, responsive user experiences backed by
+                        robust server-side logic. My goal is to deliver end-to-end solutions that are efficient and
+                        scalable.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, dolor!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, dolor!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, dolor!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>sanskrutishambharkar@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>9356544964</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/sanskruti-shambharkar-39439a248"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://x.com/Sans041002?t=LHlO35QLV10wDZ57r50eXw&s=09"><i
+                                class="fa-brands fa-square-twitter"></i></i></a>
+                        <a href="https://github.com/sanskruti-design"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/sans_kruti_._?igsh=cjRnZmRjYXd3ZDQ4"><i
+                                class="fa-brands fa-square-instagram"></i></a>
+
+                    </div>
+                    <a href="/images/Sanskruti_CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter your name" required>
+                        <input type="email" name="Email" id="" placeholder="Enter your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" id=""></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright &copy; youtube <i class="fa-regular fa-heart"></i></p>
+        </div>
+    </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxnlID3Lk2nGxOUFiXOjCALqIFpweVIhsAWuYSk2wNpmL773EMYekH-u3GLzm54r3c/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "message sent successfully";
+                    setTimeout(function () {
+                        msg.innerHTML = "";
+                    }, 1000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+
+</body>
+
+</html>
